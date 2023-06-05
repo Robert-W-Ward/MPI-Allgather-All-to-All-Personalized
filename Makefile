@@ -7,7 +7,7 @@ OBJS = $(AUTOMATIC_OBJS)
 TARGET = project3
 
 # Put C preprocessor flags here
-CPPFLAGS = 
+CPPFLAGS = -Iinclude 
 
 # C Compiler
 CC = mpicc
@@ -27,11 +27,10 @@ LIBRARIES = -lm
 #############################################################################
 
 # Find program files in this directory
-AUTOMATIC_FILES = $(wildcard *.c *.cc *.C)
-AUTOMATIC_OBJS = $(subst .c,.o,$(subst .cc,.o,$(subst .C,.o,$(AUTOMATIC_FILES))))
-
+AUTOMATIC_FILES = $(wildcard *.c *.cc *.C) src/main.cc
+AUTOMATIC_OBJS = $(subst .c,.o,$(subst .cc,.o,$(subst .C,.o,$(AUTOMATIC_FILES)))) src/main.o
 # Compile target program
-$(TARGET): $(OBJS) 
+$(TARGET): $(OBJS)  src/main.o
 	$(CXX) -o $(TARGET) $(OBJS) $(LIBRARIES)
 
 
