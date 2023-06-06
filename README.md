@@ -6,7 +6,7 @@ This project aims to analyze and compare the performance of the OpenMPI `Allgath
 
 The objective is to evaluate the efficiency, scalability, and overhead of both approaches in various scenarios, such as different message sizes, number of processes, and communication patterns. By conducting extensive experiments on MSstate's Supercomputer "Shadow," we aim to gain insights into the strengths and weaknesses of each method and provide recommendations for choosing the appropriate approach based on specific requirements and constraints.
 
-## Setup and Execution (Will not work, just for illustrative purposes)
+## Setup and Execution (WILL NOT WORK! FOR POSTERITY!)
 
 1. Connect to MSstate's Supercomputer "Shadow" using your preferred SSH client:
 
