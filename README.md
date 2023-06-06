@@ -42,3 +42,11 @@ The objective is to evaluate the efficiency, scalability, and overhead of both a
     squeue -u username
     ```
 Once the job is completed, you will find the output in the specified file.
+
+### Attribution
+This project was created as a class project for Mississippi State University CSE 4163 Design of Parallel Algorithms Class. All rights are reserved.
+Attribution:
+
+- Dr. Ed Luke: This project was created by Dr. Ed Luke for students to complete as part of the course.
+
+Unauthorized copying, modification, or distribution of this project is strictly prohibited. For education only. 
